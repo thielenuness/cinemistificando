@@ -1,20 +1,20 @@
 body{
-    font-family: 'Indie Flower', cursive;;
+    font-family: 'Slabo 27px', serif; color: white;
     margin: 0px;
     padding: 0px;
-    background: #4682B4;
+    background:black;
 }
 
 /* lembrar da virgula para separar */
 ul , li{
-    font-family: 'Charmonman', cursive; color: none;
+    font-family: 'Chakra Petch', sans-serif; color: white;
     list-style: none;
     margin: 0 auto;
 }
 
 /* lembrar de tirar a margem */
 ol li{
-    font-family:'Charmonman', cursive; color: none;
+    font-family: 'Chakra Petch', sans-serif; color: none;
     list-style: none;
 }
 
@@ -34,24 +34,30 @@ a:hover{
     font-weight: bold;
 }
 .menu{
-    background: #4682B4;
-    
+    background: gray;
+    display: flex;
+    justify-content: space-between;
+    /* margem entre um item e outro */
+    padding: 5px;
+    padding-bottom: 10px;
+    justify-content: space; 
    
 }
 
 .menu li{
-padding-left: 25px;
+padding-left: 80px;
 display: inline;  
+
 }
 
 .menu img{
-width: 100px;
+width: 40px;
 }
 
 .estilo-imagem{
 border: solid #2d65ff 2px;
 border-radius: 20px;
-margin-top: 100px;
+margin-top: 20px;
 
 }
 
@@ -74,8 +80,63 @@ padding-bottom: 150px;
 background:#ADD8E6;
 /* .. é para voltar uma pasta */
 /* lembrar sempre do caminho da imagem */
-background-image: url("../imagem/backpp.png");
+/* link do banner a baixo */
+background-image: url("../imagem/oscar1.jpg");
 background-repeat: no-repeat;
 background-size: cover;
+background-position: center;
+margin-top: -16px;
 }
+
+#cinemistificando{
+    margin-top: 10px;
+}
+
+
+.container{
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    /* força o elemento a ir para baixo */
+    flex-wrap:row wrap;
+}
+
+.cinema-famoso{
+    margin: 50px;
+}
+
+.container-7{
+    margin: 50px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding-left: 20px;
+
+}
+footer{
+    background-color:black;
+    
+}
+footer > div{
+    display: flex;
+    justify-content: space-around;
+    padding: 50px;
+}
+
+/* selecionar cada elemento da lista */
+
+footer > div > div > ol > li:first-child {
+    font-weight: bold;
+    margin-bottom: 5px;
+
+}
+
+footer > div > div > ol > li:nth-child(4) {
+    font-weight: bold;
+    color: blue;
+    margin-bottom: 5px;
+
+}
+
 
